@@ -1,0 +1,15 @@
+class Solution {
+  public:
+    int minValue(Node* root) {
+        // Code here
+        Node *temp =root;
+        
+        if(!temp)return -1;
+        
+        while(temp->left!=NULL){
+            temp=temp->left;
+        }
+        
+        return temp->data;
+    }
+};
